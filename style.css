@@ -1,0 +1,32 @@
+h2 {
+    font-weight: 500;
+    font-family: "Sono", sans-serif;
+    color: #001AA3;
+    font-size: 39px;
+}
+
+.img-container {
+    background-color: #001AA3;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 3rem 2rem;
+    margin-top: 8rem;
+}
+
+a {
+    color: #1c76ff;
+    font-size: 25px;
+}
+
+video {
+    width: 600px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+.bg {
+    background: url('bg.png') no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+

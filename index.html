@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abovo.jobs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="container text-center">
+            <div class="img-container">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h2 class="mt-5">Karriered feltöltés alatt...</h2>
+            <a href="mailto:hu@abovo.jobs">hu@abovo.jobs</a>
+          </div>
+           <video id="videoPlayer" controls autoplay loop muted playsinline>
+            <!-- Sources will be set by JavaScript -->
+        </video>
+    </div>
+
+  <!-- Bootstrap JS és jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var videoPlayer = document.getElementById('videoPlayer');
+      var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+      if (isSafari) {
+        // Safari detected, use MP4
+        videoPlayer.innerHTML = '<source src="hunor.mp4" type="video/mp4">';
+      } else {
+        // Other browsers, use WebM
+        videoPlayer.innerHTML = '<source src="hunor.webm" type="video/webm">';
+      }
+    });
+  </script>
+</body>
+</html>
