@@ -23,6 +23,7 @@ video {
     position: fixed;
     left: 50%;
     transform: translate(-50%);
+    bottom: -13rem;
 }
 .bg {
     background: url('bg.png') no-repeat;
